@@ -2,24 +2,61 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tailwindtemplate</title>
+    <link rel="shortcut icon" href="src/assets/logo-apple.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Apple Vision</title>
   </head>
-  <body style="background: #0f1516;">
-    <nav>
-      <img src="src/assets/logo-apple.svg" alt="logo-apple">
-       <ul>
-        <li>Home</li>
-        <li>Design</li>
-        <li>Technology</li>
-       </ul>
-       <button>Notify me</button>
+  <body>
+    <nav class=" fixed w-full border-b border-white/10  bg-[#0f1516]/95 backdrop-blur-sm">
+      <div class="mx-auto flex max-w-7xl items-end justify-between px-6 py-5 lg:px-10">
+        <a href="#home" class="shrink-0">
+          <img src="src/assets/logo-apple.svg" alt="Apple logo" class="h-8 w-auto" />
+        </a>
+
+        <ul class="hidden items-end gap-10 text-sm font-medium uppercase tracking-[0.22em] text-[#A2A5A5] md:flex">
+          <li ><a class="transition-colors hover:text-white" href="#home">Home</a></li>
+          <li><a class="transition-colors hover:text-white" href="#design">Design</a></li>
+          <li><a class="transition-colors hover:text-white" href="#technology">Technology</a></li>
+        </ul>
+
+        <button class="border border-white/20 px-5 py-2 text-sm font-medium text-white transition-colors hover:border-white/40 hover:bg-white/5">
+          Notify me
+        </button>
+      </div>
     </nav>
     <main>
-      <section class="home" id="home"></section>
-      <section></section>
-      <section></section>
+      <section class="home" id="home">
+        <div class="mx-auto flex max-w-7xl flex-col items-center gap-6 px-6 py-16 text-center lg:px-10">
+          <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+            Apple Vision Pro
+          </h1>
+          <img src="src/assets/apple-vision.svg" alt="">
+          <p class="max-w-3xl text-lg text-[#A2A5A5]">
+            Apple Vision Pro is a revolutionary spatial computer that seamlessly blends digital content with the physical world, while allowing you to stay present and connected to others.
+          </p>
+          <a href="#technology" class="rounded-full bg-white px-8 py-3 text-sm font-medium text-[#0f1516] transition-colors hover:bg-white/90">
+            Learn more
+          </a>
+        </div>
+      </section>
+      <section id="design" class="design">
+          <div class="mx-auto flex max-w-7xl flex-col items-center gap-6 px-6 py-16 text-center lg:px-10">
+            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+              Design
+            </h2>
+            <img src="src/assets/design.svg" alt="" srcset="">
+            <p class="max-w-3xl text-lg text-[#A2A5A5]">
+              Apple Vision Pro features a sleek and lightweight design that combines premium materials with advanced technology. The device is crafted from aluminum and glass, with a comfortable and adjustable headband that fits securely on your head. The front of the device features a high-resolution display that provides stunning visuals, while the back of the device houses powerful sensors and cameras that enable spatial computing.
+            </p>
+          </div>
+      </section>
+      <section id="technology"></section>
       <footer>&copy; Leandro Andrade</footer>
     </main>
   </body>
