@@ -10,33 +10,61 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Apple Vision</title>
+    <title>Apple Vision - Leandro Andrade</title>
   </head>
   <body>
-    <nav class=" fixed w-full border-b border-white/10  bg-[#0f1516]/95 backdrop-blur-sm">
-      <div class="mx-auto flex max-w-7xl items-end justify-between px-6 py-5 lg:px-10">
-        <a href="#home" class="shrink-0">
+    <nav class="fixed w-full border-b border-white/10 bg-[#0f1516]/95 backdrop-blur-sm">
+      <div class="mx-auto max-w-7xl px-6 py-4 lg:px-10">
+        <div class="flex items-center justify-between gap-4">
+        <a href="https://www.apple.com/br/" target="_blank" class="shrink-0">
           <img src="src/assets/logo-apple.svg" alt="Apple logo" class="h-8 w-auto" />
         </a>
 
-        <ul class="hidden items-end gap-10 text-sm font-medium uppercase tracking-[0.22em] text-[#A2A5A5] md:flex">
-          <li ><a class="transition-colors hover:text-white" href="#home">Home</a></li>
-          <li><a class="transition-colors hover:text-white" href="#design">Design</a></li>
-          <li><a class="transition-colors hover:text-white" href="#technology">Technology</a></li>
-        </ul>
+        <div class="hidden items-center gap-10 md:flex">
+          <ul class="flex items-end gap-10 text-sm font-medium uppercase tracking-[0.22em] text-[#adb1b1]">
+            <li class="hover:text-white"><a class="transition-colors" href="#home">Home</a></li>
+            <li class="hover:text-white"><a class="transition-colors" href="#design">Design</a></li>
+            <li class="hover:text-white"><a class="transition-colors" href="#technology">Technology</a></li>
+          </ul>
 
-        <button class="border border-white/20 px-5 py-2 text-sm font-medium text-white transition-colors hover:border-white/40 hover:bg-white/5">
-          Notify me
-        </button>
+          <button class="border border-white/20 px-5 py-2 text-sm font-medium text-white transition-colors hover:border-white/40 hover:bg-white/5">
+           <a href="https://www.apple.com/apple-vision-pro/" target="_blank"> Notify me </a>
+          </button>
+        </div>
+
+        <details class="relative md:hidden">
+          <summary class="cursor-pointer list-none appearance-none border border-white/20 px-4 py-2 text-sm font-medium text-white transition-colors hover:border-white/40 hover:bg-white/5 [&::-webkit-details-marker]:hidden">
+            Menu
+          </summary>
+
+          <div class="absolute right-0 top-full mt-3 w-56 rounded-2xl border border-white/10 bg-[#0f1516]/98 p-3 shadow-2xl backdrop-blur-sm">
+            <ul class="flex flex-col gap-1 text-sm font-medium uppercase tracking-[0.22em] text-[#adb1b1]">
+              <li class="rounded-xl px-3 py-2 transition-colors hover:bg-white/5 hover:text-white">
+                <a class="block" href="#home">Home</a>
+              </li>
+              <li class="rounded-xl px-3 py-2 transition-colors hover:bg-white/5 hover:text-white">
+                <a class="block" href="#design">Design</a>
+              </li>
+              <li class="rounded-xl px-3 py-2 transition-colors hover:bg-white/5 hover:text-white">
+                <a class="block" href="#technology">Technology</a>
+              </li>
+            </ul>
+
+            <button class="mt-3 w-full border border-white/20 px-5 py-2 text-sm font-medium text-white transition-colors hover:border-white/40 hover:bg-white/5">
+              Notify me
+            </button>
+          </div>
+        </details>
+        </div>
       </div>
     </nav>
     <main>
-      <section class="home" id="home">
-        <div class="mx-auto flex max-w-7xl flex-col items-center gap-6 px-6 py-16 text-center lg:px-10">
+      <section id="home" class="bg-[#0f1516] h-screen justify-center">
+        <div class="mx-auto flex max-w-7xl flex-col items-center gap-6 px-6 pt-28 pb-16 text-center sm:pt-32 md:pt-36 lg:pt-44 lg:px-10">
           <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
             Apple Vision Pro
           </h1>
-          <img src="src/assets/apple-vision.svg" alt="">
+          <img src="src/assets/apple-vision.svg" alt="Apple Vision Pro">
           <p class="max-w-3xl text-lg text-[#A2A5A5]">
             Apple Vision Pro is a revolutionary spatial computer that seamlessly blends digital content with the physical world, while allowing you to stay present and connected to others.
           </p>
@@ -45,19 +73,43 @@
           </a>
         </div>
       </section>
-      <section id="design" class="design">
-          <div class="mx-auto flex max-w-7xl flex-col items-center gap-6 px-6 py-16 text-center lg:px-10">
-            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-              Design
+      <section id="design" class="design bg-[#0f1516] h-screen justify-center flex place-items-center-safe">
+          <div class="mx-auto flex max-w-7xl flex-col items-center justify-center gap-6 px-6 pt-28 py-16 text-center lg:px-10">
+            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-6xl ">
+              Designed by Apple
             </h2>
-            <img src="src/assets/design.svg" alt="" srcset="">
+            <img src="src/assets/design.svg" alt="Apple Vision Pro Design">
             <p class="max-w-3xl text-lg text-[#A2A5A5]">
-              Apple Vision Pro features a sleek and lightweight design that combines premium materials with advanced technology. The device is crafted from aluminum and glass, with a comfortable and adjustable headband that fits securely on your head. The front of the device features a high-resolution display that provides stunning visuals, while the back of the device houses powerful sensors and cameras that enable spatial computing.
+              Apple Vision Pro features a sleek and lightweight design that combines premium materials with advanced technology.
             </p>
           </div>
       </section>
-      <section id="technology"></section>
-      <footer>&copy; Leandro Andrade</footer>
+      <section id="technology" class="bg-[#0f1516] h-screen  mt-20 flex">
+        <div class="mx-auto max-w-7xl px-6 pt-28 pb-10 lg:px-10 mt-30 flex items-center">
+          <div class="grid grid-cols-1 gap-12 md:grid-cols-2 md:items-center">
+            <div class="text-left">
+              <h1 class="text-4xl font-bold leading-snug text-white sm:text-5xl md:text-6xl lg:text-7xl">
+                More pixels than a 4K TV.
+                <br />
+                For each eye.
+              </h1>
+
+              <p class="mt-8 max-w-xl text-lg text-[#A2A5A5] mb-4">
+                The custom micro-OLED Display System features 23 million pixels, delivering stunning resolution and colors. And a specially designed three-element lens creates the feeling of a display that’s everywhere you look.
+              </p>
+              <button class="rounded-full bg-white px-8 py-3 text-sm font-medium text-[#0f1516] transition-colors hover:bg-white/90 ">
+               <a href="https://www.apple.com/shop/buy-vision/apple-vision-pro" target="_blank">Buy Now</a>
+          </button>
+            </div>
+
+            <div class="flex justify-end">
+              <img src="src/assets/technlogy.svg" alt="Apple Vision Pro Technology" class="w-full max-w-195 object-contain" />
+            </div>
+          </div>
+           
+        </div>
+      </section>
+      <footer class="text-center py-10">&copy; Leandro Andrade - Poticode Trainne 2026</footer>
     </main>
   </body>
   <script type="module" src="./src/main.js"></script>
